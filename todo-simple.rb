@@ -5,20 +5,20 @@
 class TodoSimple < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.1/todo-simple_Darwin_arm64.tar.gz"
-      sha256 "5581b48fc92f4f031f5c26a6e81af666bed1458e22566bee9efe9040c704fc4d"
+      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.2/todo-simple_Darwin_arm64.tar.gz"
+      sha256 "7bbbe08882a2a9f9408a57dae0945226ee83ac669dc9651fddf87b36270010cd"
 
       def install
         bin.install "todo-simple"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.1/todo-simple_Darwin_x86_64.tar.gz"
-      sha256 "b1479d8a86d9357dc23eac8254df0cdc140dd910711f0d0ce4ffa48a32cc9d82"
+      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.2/todo-simple_Darwin_x86_64.tar.gz"
+      sha256 "907f50dcdb4df1bad98aaa9a7ae1eff2c304f350930f8a317fd81fe90293a711"
 
       def install
         bin.install "todo-simple"
@@ -28,16 +28,16 @@ class TodoSimple < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.1/todo-simple_Linux_arm64.tar.gz"
-      sha256 "a9967266142d89ac707ad1a8bfc2b9bd3d621dbcef524ded92baa3840912cc7f"
+      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.2/todo-simple_Linux_arm64.tar.gz"
+      sha256 "7b1caedd6f5461cee58c0e8d43e832b0066eb4c9afaa4eafee056c32e69d9187"
 
       def install
         bin.install "todo-simple"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.1/todo-simple_Linux_x86_64.tar.gz"
-      sha256 "4228775392789904ddad4eb68306ae15f6a27e4c4650c9b05d64ca04defb3c78"
+      url "https://github.com/ujiuji1259/todo-simple/releases/download/v0.1.2/todo-simple_Linux_x86_64.tar.gz"
+      sha256 "2fb3b93bb55527631b41fdd2624c55c64dafc879751ca8c78593550e626c20a1"
 
       def install
         bin.install "todo-simple"
